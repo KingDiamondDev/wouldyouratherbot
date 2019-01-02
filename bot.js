@@ -3,7 +3,7 @@ var logger = require('winston');
 var auth = require('./auth.json');
 var fs = require('fs');
 
-const questions = fs.readFileSync('resources/wyr_questions.txt').toString().split("\n");
+const questions = fs.readFileSync('wyr_questions.txt').toString().split("\n");
 
 // Configure logger settings
 logger.remove(logger.transports.Console);
